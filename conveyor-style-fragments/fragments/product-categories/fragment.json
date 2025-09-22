@@ -1,0 +1,8 @@
+{
+  "cssPath": "styles.css",
+  "htmlPath": "index.html",
+  "jsPath": "main.js",
+  "name": "Product Categories",
+  "type": "section",
+  "configurationPath": "configuration.json"
+}

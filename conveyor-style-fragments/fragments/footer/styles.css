@@ -1,0 +1,158 @@
+.conveyors-footer {
+  background-color: #1e3a5f;
+  color: white;
+  padding: 60px 0 0 0;
+  margin-top: 50px;
+}
+
+.conveyors-footer .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.conveyors-footer .footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+
+.conveyors-footer .footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.conveyors-footer .company-info {
+  padding-right: 20px;
+}
+
+.conveyors-footer .footer-logo {
+  margin-bottom: 20px;
+}
+
+.conveyors-footer .logo-img {
+  height: 50px;
+  width: auto;
+}
+
+.conveyors-footer .company-description {
+  margin-bottom: 25px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.conveyors-footer .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.conveyors-footer .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+}
+
+.conveyors-footer .contact-icon {
+  font-size: 1rem;
+}
+
+.conveyors-footer .footer-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #f56500;
+}
+
+.conveyors-footer .footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.conveyors-footer .footer-links li {
+  margin: 0;
+}
+
+.conveyors-footer .footer-links a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.conveyors-footer .footer-links a:hover {
+  color: #f56500;
+}
+
+.conveyors-footer .footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px 0;
+}
+
+.conveyors-footer .footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.conveyors-footer .copyright {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.conveyors-footer .footer-bottom-links {
+  display: flex;
+  gap: 25px;
+}
+
+.conveyors-footer .footer-bottom-links a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.conveyors-footer .footer-bottom-links a:hover {
+  color: #f56500;
+}
+
+@media (max-width: 768px) {
+  .conveyors-footer .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .conveyors-footer .company-info {
+    padding-right: 0;
+  }
+  
+  .conveyors-footer .footer-bottom-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .conveyors-footer {
+    padding: 40px 0 0 0;
+  }
+  
+  .conveyors-footer .footer-container {
+    padding: 0 15px;
+  }
+  
+  .conveyors-footer .footer-bottom-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

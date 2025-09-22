@@ -1,0 +1,36 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "dataType": "string",
+          "defaultValue": "linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%)",
+          "label": "Background (CSS Value)",
+          "name": "backgroundColor",
+          "type": "text"
+        },
+        {
+          "defaultValue": true,
+          "label": "Enable Autoplay",
+          "name": "autoplay",
+          "type": "checkbox"
+        },
+        {
+          "dataType": "string",
+          "defaultValue": "5",
+          "label": "Autoplay Speed (seconds)",
+          "name": "autoplaySpeed",
+          "type": "select",
+          "typeOptions": {
+            "validValues": [
+              { "label": "3 seconds", "value": "3" },
+              { "label": "5 seconds", "value": "5" },
+              { "label": "8 seconds", "value": "8" },
+              { "label": "10 seconds", "value": "10" }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

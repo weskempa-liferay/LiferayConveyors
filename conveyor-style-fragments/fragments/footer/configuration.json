@@ -1,0 +1,28 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "dataType": "string",
+          "defaultValue": "#1e3a5f",
+          "label": "Background Color",
+          "name": "backgroundColor",
+          "type": "colorPalette"
+        },
+        {
+          "dataType": "string",
+          "defaultValue": "60px",
+          "label": "Footer Padding",
+          "name": "footerPadding",
+          "type": "text"
+        },
+        {
+          "defaultValue": true,
+          "label": "Show Contact Information",
+          "name": "showContactInfo",
+          "type": "checkbox"
+        }
+      ]
+    }
+  ]
+}

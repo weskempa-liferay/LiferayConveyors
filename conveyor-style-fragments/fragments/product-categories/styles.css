@@ -1,0 +1,290 @@
+.conveyors-product-categories {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.conveyors-product-categories .categories-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.conveyors-product-categories .categories-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.conveyors-product-categories .section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e3a5f;
+  margin-bottom: 1rem;
+}
+
+.conveyors-product-categories .section-subtitle {
+  font-size: 1.1rem;
+  color: #6c757d;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.conveyors-product-categories .categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.conveyors-product-categories .category-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.conveyors-product-categories .category-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+}
+
+.conveyors-product-categories .category-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.conveyors-product-categories .category-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.conveyors-product-categories .category-card:hover .category-img {
+  transform: scale(1.05);
+}
+
+.conveyors-product-categories .category-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(30, 58, 95, 0.8), rgba(245, 101, 0, 0.8));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.conveyors-product-categories .category-card:hover .category-overlay {
+  opacity: 1;
+}
+
+.conveyors-product-categories .category-icon {
+  font-size: 3rem;
+  color: white;
+  animation: bounceIn 0.6s ease;
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.3); opacity: 0; }
+  50% { transform: scale(1.05); }
+  70% { transform: scale(0.9); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.conveyors-product-categories .category-content {
+  padding: 30px;
+}
+
+.conveyors-product-categories .category-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1e3a5f;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.conveyors-product-categories .category-description {
+  color: #6c757d;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.conveyors-product-categories .category-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+}
+
+.conveyors-product-categories .category-features li {
+  position: relative;
+  padding: 6px 0 6px 20px;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.conveyors-product-categories .category-features li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  color: #f56500;
+  font-weight: bold;
+}
+
+.conveyors-product-categories .category-link {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(135deg, #f56500, #e55100);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.conveyors-product-categories .category-link:after {
+  content: '→';
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.conveyors-product-categories .category-link:hover {
+  background: linear-gradient(135deg, #e55100, #d44500);
+  transform: translateX(2px);
+}
+
+.conveyors-product-categories .category-link:hover:after {
+  transform: translateX(4px);
+}
+
+.conveyors-product-categories .categories-footer {
+  background: linear-gradient(135deg, #1e3a5f, #2c5282);
+  color: white;
+  border-radius: 15px;
+  padding: 50px 40px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+.conveyors-product-categories .footer-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.conveyors-product-categories .footer-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.conveyors-product-categories .footer-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.conveyors-product-categories .footer-cta {
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.conveyors-product-categories .footer-cta.primary {
+  background: #f56500;
+  color: white;
+  border-color: #f56500;
+}
+
+.conveyors-product-categories .footer-cta.primary:hover {
+  background: #e55100;
+  border-color: #e55100;
+  transform: translateY(-2px);
+}
+
+.conveyors-product-categories .footer-cta.secondary {
+  background: transparent;
+  color: white;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.conveyors-product-categories .footer-cta.secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: white;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .conveyors-product-categories .section-title {
+    font-size: 2rem;
+  }
+  
+  .conveyors-product-categories .categories-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .conveyors-product-categories .category-content {
+    padding: 25px;
+  }
+  
+  .conveyors-product-categories .categories-footer {
+    padding: 40px 25px;
+  }
+  
+  .conveyors-product-categories .footer-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .conveyors-product-categories .footer-cta {
+    width: 250px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .conveyors-product-categories {
+    padding: 60px 0;
+  }
+  
+  .conveyors-product-categories .categories-container {
+    padding: 0 15px;
+  }
+  
+  .conveyors-product-categories .section-title {
+    font-size: 1.75rem;
+  }
+  
+  .conveyors-product-categories .category-image {
+    height: 180px;
+  }
+  
+  .conveyors-product-categories .footer-title {
+    font-size: 1.5rem;
+  }
+}
