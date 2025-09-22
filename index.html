@@ -110,36 +110,38 @@
             
             <h4>🗂️ Fragment Structure:</h4>
             <div class="file-list">
-collection.json<br>
-├── hero-banner/<br>
-│   ├── fragment.json<br>
-│   ├── index.html<br>
-│   ├── styles.css<br>
-│   ├── main.js<br>
-│   └── configuration.json<br>
-├── product-showcase/<br>
-│   ├── fragment.json<br>
-│   ├── index.html<br>
-│   ├── styles.css<br>
-│   ├── main.js<br>
-│   └── configuration.json<br>
-├── navigation-header/<br>
-│   ├── fragment.json<br>
-│   ├── index.html<br>
-│   ├── styles.css<br>
-│   ├── main.js<br>
-│   └── configuration.json<br>
-└── company-info/<br>
-    ├── fragment.json<br>
-    ├── index.html<br>
-    ├── styles.css<br>
-    ├── main.js<br>
-    └── configuration.json
+ConveyorStyleFragments/<br>
+├── collection.json<br>
+└── Fragments/<br>
+    ├── hero-banner/<br>
+    │   ├── fragment.json<br>
+    │   ├── index.html<br>
+    │   ├── styles.css<br>
+    │   ├── main.js<br>
+    │   └── configuration.json<br>
+    ├── product-showcase/<br>
+    │   ├── fragment.json<br>
+    │   ├── index.html<br>
+    │   ├── styles.css<br>
+    │   ├── main.js<br>
+    │   └── configuration.json<br>
+    ├── navigation-header/<br>
+    │   ├── fragment.json<br>
+    │   ├── index.html<br>
+    │   ├── styles.css<br>
+    │   ├── main.js<br>
+    │   └── configuration.json<br>
+    └── company-info/<br>
+        ├── fragment.json<br>
+        ├── index.html<br>
+        ├── styles.css<br>
+        ├── main.js<br>
+        └── configuration.json
             </div>
             
             <h4>📦 Deployment Instructions:</h4>
             <ol>
-                <li>Create a ZIP file containing all fragment folders and collection.json</li>
+                <li>Create a ZIP file of the ConveyorStyleFragments folder</li>
                 <li>In Liferay DXP, navigate to Site Administration → Design → Fragments</li>
                 <li>Click "Import" and upload the ZIP file</li>
                 <li>The fragments will be available in the "Conveyors Inc. Fragments" collection</li>
@@ -152,10 +154,10 @@ collection.json<br>
                 <p class="fragment-description">Industrial-themed hero section with company branding, messaging, and call-to-action buttons</p>
             </div>
             <div class="fragment-content">
-                <link rel="stylesheet" href="hero-banner/styles.css">
+                <link rel="stylesheet" href="ConveyorStyleFragments/Fragments/hero-banner/styles.css">
                 <div id="hero-banner-container"></div>
                 <script>
-                    fetch('hero-banner/index.html')
+                    fetch('ConveyorStyleFragments/Fragments/hero-banner/index.html')
                         .then(response => response.text())
                         .then(html => {
                             document.getElementById('hero-banner-container').innerHTML = html;
@@ -170,10 +172,10 @@ collection.json<br>
                 <p class="fragment-description">Grid layout showcasing bulk material handling equipment with cards and descriptions</p>
             </div>
             <div class="fragment-content">
-                <link rel="stylesheet" href="product-showcase/styles.css">
+                <link rel="stylesheet" href="ConveyorStyleFragments/Fragments/product-showcase/styles.css">
                 <div id="product-showcase-container"></div>
                 <script>
-                    fetch('product-showcase/index.html')
+                    fetch('ConveyorStyleFragments/Fragments/product-showcase/index.html')
                         .then(response => response.text())
                         .then(html => {
                             document.getElementById('product-showcase-container').innerHTML = html;
@@ -188,10 +190,10 @@ collection.json<br>
                 <p class="fragment-description">Site navigation with company logo, main menu, and prominent call-to-action buttons</p>
             </div>
             <div class="fragment-content">
-                <link rel="stylesheet" href="navigation-header/styles.css">
+                <link rel="stylesheet" href="ConveyorStyleFragments/Fragments/navigation-header/styles.css">
                 <div id="navigation-header-container"></div>
                 <script>
-                    fetch('navigation-header/index.html')
+                    fetch('ConveyorStyleFragments/Fragments/navigation-header/index.html')
                         .then(response => response.text())
                         .then(html => {
                             document.getElementById('navigation-header-container').innerHTML = html;
@@ -206,10 +208,10 @@ collection.json<br>
                 <p class="fragment-description">Company heritage section highlighting 45+ years experience and family-owned narrative</p>
             </div>
             <div class="fragment-content">
-                <link rel="stylesheet" href="company-info/styles.css">
+                <link rel="stylesheet" href="ConveyorStyleFragments/Fragments/company-info/styles.css">
                 <div id="company-info-container"></div>
                 <script>
-                    fetch('company-info/index.html')
+                    fetch('ConveyorStyleFragments/Fragments/company-info/index.html')
                         .then(response => response.text())
                         .then(html => {
                             document.getElementById('company-info-container').innerHTML = html;
