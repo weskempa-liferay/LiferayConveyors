@@ -110,9 +110,9 @@
             
             <h4>🗂️ Fragment Structure:</h4>
             <div class="file-list">
-ConveyorStyleFragments/<br>
+conveyor-style-fragments/<br>
 ├── collection.json<br>
-└── Fragments/<br>
+└── fragments/<br>
     ├── hero-banner/<br>
     │   ├── fragment.json<br>
     │   ├── index.html<br>
@@ -141,7 +141,7 @@ ConveyorStyleFragments/<br>
             
             <h4>📦 Deployment Instructions:</h4>
             <ol>
-                <li>Create a ZIP file of the ConveyorStyleFragments folder</li>
+                <li>Create a ZIP file of the conveyor-style-fragments folder</li>
                 <li>In Liferay DXP, navigate to Site Administration → Design → Fragments</li>
                 <li>Click "Import" and upload the ZIP file</li>
                 <li>The fragments will be available in the "Conveyors Inc. Fragments" collection</li>
@@ -154,10 +154,10 @@ ConveyorStyleFragments/<br>
                 <p class="fragment-description">Industrial-themed hero section with company branding, messaging, and call-to-action buttons</p>
             </div>
             <div class="fragment-content">
-                <link rel="stylesheet" href="ConveyorStyleFragments/Fragments/hero-banner/styles.css">
+                <link rel="stylesheet" href="conveyor-style-fragments/fragments/hero-banner/styles.css">
                 <div id="hero-banner-container"></div>
                 <script>
-                    fetch('ConveyorStyleFragments/Fragments/hero-banner/index.html')
+                    fetch('conveyor-style-fragments/fragments/hero-banner/index.html')
                         .then(response => response.text())
                         .then(html => {
                             document.getElementById('hero-banner-container').innerHTML = html;
@@ -172,10 +172,10 @@ ConveyorStyleFragments/<br>
                 <p class="fragment-description">Grid layout showcasing bulk material handling equipment with cards and descriptions</p>
             </div>
             <div class="fragment-content">
-                <link rel="stylesheet" href="ConveyorStyleFragments/Fragments/product-showcase/styles.css">
+                <link rel="stylesheet" href="conveyor-style-fragments/fragments/product-showcase/styles.css">
                 <div id="product-showcase-container"></div>
                 <script>
-                    fetch('ConveyorStyleFragments/Fragments/product-showcase/index.html')
+                    fetch('conveyor-style-fragments/fragments/product-showcase/index.html')
                         .then(response => response.text())
                         .then(html => {
                             document.getElementById('product-showcase-container').innerHTML = html;
@@ -190,10 +190,10 @@ ConveyorStyleFragments/<br>
                 <p class="fragment-description">Site navigation with company logo, main menu, and prominent call-to-action buttons</p>
             </div>
             <div class="fragment-content">
-                <link rel="stylesheet" href="ConveyorStyleFragments/Fragments/navigation-header/styles.css">
+                <link rel="stylesheet" href="conveyor-style-fragments/fragments/navigation-header/styles.css">
                 <div id="navigation-header-container"></div>
                 <script>
-                    fetch('ConveyorStyleFragments/Fragments/navigation-header/index.html')
+                    fetch('conveyor-style-fragments/fragments/navigation-header/index.html')
                         .then(response => response.text())
                         .then(html => {
                             document.getElementById('navigation-header-container').innerHTML = html;
@@ -208,10 +208,10 @@ ConveyorStyleFragments/<br>
                 <p class="fragment-description">Company heritage section highlighting 45+ years experience and family-owned narrative</p>
             </div>
             <div class="fragment-content">
-                <link rel="stylesheet" href="ConveyorStyleFragments/Fragments/company-info/styles.css">
+                <link rel="stylesheet" href="conveyor-style-fragments/fragments/company-info/styles.css">
                 <div id="company-info-container"></div>
                 <script>
-                    fetch('ConveyorStyleFragments/Fragments/company-info/index.html')
+                    fetch('conveyor-style-fragments/fragments/company-info/index.html')
                         .then(response => response.text())
                         .then(html => {
                             document.getElementById('company-info-container').innerHTML = html;
