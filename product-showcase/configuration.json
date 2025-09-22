@@ -1,0 +1,36 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "dataType": "string",
+          "defaultValue": "4",
+          "label": "Products Per Row",
+          "name": "productsPerRow",
+          "type": "select",
+          "typeOptions": {
+            "validValues": [
+              { "label": "2 Products", "value": "2" },
+              { "label": "3 Products", "value": "3" },
+              { "label": "4 Products", "value": "4" }
+            ]
+          }
+        },
+        {
+          "dataType": "bool",
+          "defaultValue": true,
+          "label": "Show View All Button",
+          "name": "showViewAll",
+          "type": "checkbox"
+        },
+        {
+          "dataType": "string",
+          "defaultValue": "#f8f9fa",
+          "label": "Background Color",
+          "name": "backgroundColor",
+          "type": "colorPalette"
+        }
+      ]
+    }
+  ]
+}

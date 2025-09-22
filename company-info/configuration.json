@@ -1,0 +1,35 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "dataType": "string",
+          "defaultValue": "two-column",
+          "label": "Layout Style",
+          "name": "layout",
+          "type": "select",
+          "typeOptions": {
+            "validValues": [
+              { "label": "Two Column", "value": "two-column" },
+              { "label": "Single Column", "value": "single-column" }
+            ]
+          }
+        },
+        {
+          "dataType": "bool",
+          "defaultValue": true,
+          "label": "Show Feature Icons",
+          "name": "showFeatures",
+          "type": "checkbox"
+        },
+        {
+          "dataType": "string",
+          "defaultValue": "#ffffff",
+          "label": "Background Color",
+          "name": "backgroundColor",
+          "type": "colorPalette"
+        }
+      ]
+    }
+  ]
+}

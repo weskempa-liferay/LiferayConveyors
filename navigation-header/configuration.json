@@ -1,0 +1,29 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "dataType": "string",
+          "defaultValue": "80px",
+          "label": "Header Height",
+          "name": "headerHeight",
+          "type": "text"
+        },
+        {
+          "dataType": "bool",
+          "defaultValue": true,
+          "label": "Show CTA Buttons",
+          "name": "showCTAButtons",
+          "type": "checkbox"
+        },
+        {
+          "dataType": "string",
+          "defaultValue": "50px",
+          "label": "Logo Height",
+          "name": "logoHeight",
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}

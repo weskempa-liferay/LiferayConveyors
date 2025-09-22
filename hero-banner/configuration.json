@@ -1,0 +1,36 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "dataType": "string",
+          "defaultValue": "500px",
+          "label": "Banner Height",
+          "name": "bannerHeight",
+          "type": "text"
+        },
+        {
+          "dataType": "bool",
+          "defaultValue": true,
+          "label": "Show Overlay",
+          "name": "showOverlay",
+          "type": "checkbox"
+        },
+        {
+          "dataType": "string",
+          "defaultValue": "center",
+          "label": "Text Alignment",
+          "name": "textAlignment",
+          "type": "select",
+          "typeOptions": {
+            "validValues": [
+              { "label": "Left", "value": "left" },
+              { "label": "Center", "value": "center" },
+              { "label": "Right", "value": "right" }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

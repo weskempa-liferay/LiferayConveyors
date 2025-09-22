@@ -1,0 +1,9 @@
+{
+  "cssPath": "styles.css",
+  "configurationPath": "configuration.json",
+  "htmlPath": "index.html",
+  "jsPath": "main.js",
+  "name": "Company Information",
+  "type": "component",
+  "icon": "info-circle"
+}

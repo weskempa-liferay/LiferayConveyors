@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conveyors Inc. Fragments Preview</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+        }
+        
+        .preview-header {
+            background: #1e3a5f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .preview-title {
+            margin: 0;
+            font-size: 2rem;
+        }
+        
+        .preview-subtitle {
+            margin: 5px 0 0 0;
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+        
+        .fragment-section {
+            margin: 40px 0;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .fragment-header {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        .fragment-name {
+            margin: 0;
+            font-size: 1.3rem;
+            color: #1e3a5f;
+            font-weight: 600;
+        }
+        
+        .fragment-description {
+            margin: 5px 0 0 0;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        .fragment-content {
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .preview-footer {
+            background: #1e3a5f;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+        
+        .instructions {
+            background: #e7f3ff;
+            border: 1px solid #b3d9ff;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .instructions h3 {
+            margin-top: 0;
+            color: #1e3a5f;
+        }
+        
+        .file-list {
+            font-family: 'Courier New', monospace;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="preview-header">
+        <h1 class="preview-title">Conveyors Inc. Liferay Fragments</h1>
+        <p class="preview-subtitle">Industrial-themed fragments collection for bulk material handling equipment</p>
+    </div>
+    
+    <div class="container">
+        <div class="instructions">
+            <h3>📋 Fragment Collection Information</h3>
+            <p>This collection contains <strong>4 Liferay fragments</strong> designed for Conveyors Inc., a manufacturer of bulk material handling equipment since 1974.</p>
+            
+            <h4>🗂️ Fragment Structure:</h4>
+            <div class="file-list">
+collection.json<br>
+├── hero-banner/<br>
+│   ├── fragment.json<br>
+│   ├── index.html<br>
+│   ├── styles.css<br>
+│   ├── main.js<br>
+│   └── configuration.json<br>
+├── product-showcase/<br>
+│   ├── fragment.json<br>
+│   ├── index.html<br>
+│   ├── styles.css<br>
+│   ├── main.js<br>
+│   └── configuration.json<br>
+├── navigation-header/<br>
+│   ├── fragment.json<br>
+│   ├── index.html<br>
+│   ├── styles.css<br>
+│   ├── main.js<br>
+│   └── configuration.json<br>
+└── company-info/<br>
+    ├── fragment.json<br>
+    ├── index.html<br>
+    ├── styles.css<br>
+    ├── main.js<br>
+    └── configuration.json
+            </div>
+            
+            <h4>📦 Deployment Instructions:</h4>
+            <ol>
+                <li>Create a ZIP file containing all fragment folders and collection.json</li>
+                <li>In Liferay DXP, navigate to Site Administration → Design → Fragments</li>
+                <li>Click "Import" and upload the ZIP file</li>
+                <li>The fragments will be available in the "Conveyors Inc. Fragments" collection</li>
+            </ol>
+        </div>
+        
+        <div class="fragment-section">
+            <div class="fragment-header">
+                <h2 class="fragment-name">1. Hero Banner Fragment</h2>
+                <p class="fragment-description">Industrial-themed hero section with company branding, messaging, and call-to-action buttons</p>
+            </div>
+            <div class="fragment-content">
+                <link rel="stylesheet" href="hero-banner/styles.css">
+                <div id="hero-banner-container"></div>
+                <script>
+                    fetch('hero-banner/index.html')
+                        .then(response => response.text())
+                        .then(html => {
+                            document.getElementById('hero-banner-container').innerHTML = html;
+                        });
+                </script>
+            </div>
+        </div>
+        
+        <div class="fragment-section">
+            <div class="fragment-header">
+                <h2 class="fragment-name">2. Product Showcase Fragment</h2>
+                <p class="fragment-description">Grid layout showcasing bulk material handling equipment with cards and descriptions</p>
+            </div>
+            <div class="fragment-content">
+                <link rel="stylesheet" href="product-showcase/styles.css">
+                <div id="product-showcase-container"></div>
+                <script>
+                    fetch('product-showcase/index.html')
+                        .then(response => response.text())
+                        .then(html => {
+                            document.getElementById('product-showcase-container').innerHTML = html;
+                        });
+                </script>
+            </div>
+        </div>
+        
+        <div class="fragment-section">
+            <div class="fragment-header">
+                <h2 class="fragment-name">3. Navigation Header Fragment</h2>
+                <p class="fragment-description">Site navigation with company logo, main menu, and prominent call-to-action buttons</p>
+            </div>
+            <div class="fragment-content">
+                <link rel="stylesheet" href="navigation-header/styles.css">
+                <div id="navigation-header-container"></div>
+                <script>
+                    fetch('navigation-header/index.html')
+                        .then(response => response.text())
+                        .then(html => {
+                            document.getElementById('navigation-header-container').innerHTML = html;
+                        });
+                </script>
+            </div>
+        </div>
+        
+        <div class="fragment-section">
+            <div class="fragment-header">
+                <h2 class="fragment-name">4. Company Information Fragment</h2>
+                <p class="fragment-description">Company heritage section highlighting 45+ years experience and family-owned narrative</p>
+            </div>
+            <div class="fragment-content">
+                <link rel="stylesheet" href="company-info/styles.css">
+                <div id="company-info-container"></div>
+                <script>
+                    fetch('company-info/index.html')
+                        .then(response => response.text())
+                        .then(html => {
+                            document.getElementById('company-info-container').innerHTML = html;
+                        });
+                </script>
+            </div>
+        </div>
+    </div>
+    
+    <div class="preview-footer">
+        <p>&copy; 2025 Conveyors Inc. Liferay Fragments Collection</p>
+        <p>Ready for import into Liferay DXP</p>
+    </div>
+</body>
+</html>

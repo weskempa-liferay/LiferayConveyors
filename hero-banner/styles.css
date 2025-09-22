@@ -1,0 +1,150 @@
+.conveyors-hero-banner {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+}
+
+.conveyors-hero-banner .hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.conveyors-hero-banner .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(30, 58, 95, 0.7);
+  z-index: 1;
+}
+
+.conveyors-hero-banner .hero-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.conveyors-hero-banner .hero-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.conveyors-hero-banner .hero-text-content {
+  position: relative;
+  z-index: 3;
+  color: white;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.conveyors-hero-banner .hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.conveyors-hero-banner .hero-subtitle {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.conveyors-hero-banner .hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.conveyors-hero-banner .hero-cta {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.conveyors-hero-banner .btn-primary {
+  background-color: #f56500;
+  color: white;
+  border-color: #f56500;
+}
+
+.conveyors-hero-banner .btn-primary:hover {
+  background-color: #e55100;
+  border-color: #e55100;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(245, 101, 0, 0.3);
+}
+
+.conveyors-hero-banner .btn-secondary {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+.conveyors-hero-banner .btn-secondary:hover {
+  background-color: white;
+  color: #1e3a5f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .conveyors-hero-banner {
+    min-height: 400px;
+  }
+  
+  .conveyors-hero-banner .hero-content {
+    padding: 40px 15px;
+  }
+  
+  .conveyors-hero-banner .hero-title {
+    font-size: 2rem;
+  }
+  
+  .conveyors-hero-banner .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .conveyors-hero-banner .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .conveyors-hero-banner .hero-cta {
+    width: 250px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .conveyors-hero-banner .hero-title {
+    font-size: 1.75rem;
+  }
+  
+  .conveyors-hero-banner .hero-subtitle {
+    font-size: 0.9rem;
+  }
+}
