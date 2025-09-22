@@ -106,7 +106,7 @@
     <div class="container">
         <div class="instructions">
             <h3>📋 Fragment Collection Information</h3>
-            <p>This collection contains <strong>4 Liferay fragments</strong> designed for Conveyors Inc., a manufacturer of bulk material handling equipment since 1974.</p>
+            <p>This collection contains <strong>8 Liferay fragments</strong> designed for Conveyors Inc., a manufacturer of bulk material handling equipment since 1974.</p>
             
             <h4>🗂️ Fragment Structure:</h4>
             <div class="file-list">
@@ -130,7 +130,31 @@ conveyor-style-fragments/<br>
     │   ├── styles.css<br>
     │   ├── main.js<br>
     │   └── configuration.json<br>
-    └── company-info/<br>
+    ├── company-info/<br>
+    │   ├── fragment.json<br>
+    │   ├── index.html<br>
+    │   ├── styles.css<br>
+    │   ├── main.js<br>
+    │   └── configuration.json<br>
+    ├── footer/<br>
+    │   ├── fragment.json<br>
+    │   ├── index.html<br>
+    │   ├── styles.css<br>
+    │   ├── main.js<br>
+    │   └── configuration.json<br>
+    ├── literature-display/<br>
+    │   ├── fragment.json<br>
+    │   ├── index.html<br>
+    │   ├── styles.css<br>
+    │   ├── main.js<br>
+    │   └── configuration.json<br>
+    ├── testimonials-carousel/<br>
+    │   ├── fragment.json<br>
+    │   ├── index.html<br>
+    │   ├── styles.css<br>
+    │   ├── main.js<br>
+    │   └── configuration.json<br>
+    └── product-categories/<br>
         ├── fragment.json<br>
         ├── index.html<br>
         ├── styles.css<br>
@@ -218,11 +242,83 @@ conveyor-style-fragments/<br>
                 </script>
             </div>
         </div>
+        
+        <div class="fragment-section">
+            <div class="fragment-header">
+                <h2 class="fragment-name">5. Footer Fragment</h2>
+                <p class="fragment-description">Industrial footer with product links, industry categories, and company contact information</p>
+            </div>
+            <div class="fragment-content">
+                <link rel="stylesheet" href="conveyor-style-fragments/fragments/footer/styles.css">
+                <div id="footer-container"></div>
+                <script>
+                    fetch('conveyor-style-fragments/fragments/footer/index.html')
+                        .then(response => response.text())
+                        .then(html => {
+                            document.getElementById('footer-container').innerHTML = html;
+                        });
+                </script>
+            </div>
+        </div>
+        
+        <div class="fragment-section">
+            <div class="fragment-header">
+                <h2 class="fragment-name">6. Literature Display Fragment</h2>
+                <p class="fragment-description">Categorized display of engineering guides, worksheets, and technical documentation</p>
+            </div>
+            <div class="fragment-content">
+                <link rel="stylesheet" href="conveyor-style-fragments/fragments/literature-display/styles.css">
+                <div id="literature-display-container"></div>
+                <script>
+                    fetch('conveyor-style-fragments/fragments/literature-display/index.html')
+                        .then(response => response.text())
+                        .then(html => {
+                            document.getElementById('literature-display-container').innerHTML = html;
+                        });
+                </script>
+            </div>
+        </div>
+        
+        <div class="fragment-section">
+            <div class="fragment-header">
+                <h2 class="fragment-name">7. Testimonials Carousel Fragment</h2>
+                <p class="fragment-description">Client testimonials carousel with industry badges and statistics display</p>
+            </div>
+            <div class="fragment-content">
+                <link rel="stylesheet" href="conveyor-style-fragments/fragments/testimonials-carousel/styles.css">
+                <div id="testimonials-carousel-container"></div>
+                <script>
+                    fetch('conveyor-style-fragments/fragments/testimonials-carousel/index.html')
+                        .then(response => response.text())
+                        .then(html => {
+                            document.getElementById('testimonials-carousel-container').innerHTML = html;
+                        });
+                </script>
+            </div>
+        </div>
+        
+        <div class="fragment-section">
+            <div class="fragment-header">
+                <h2 class="fragment-name">8. Product Categories Fragment</h2>
+                <p class="fragment-description">Interactive grid showcasing different conveyor equipment categories with detailed feature lists</p>
+            </div>
+            <div class="fragment-content">
+                <link rel="stylesheet" href="conveyor-style-fragments/fragments/product-categories/styles.css">
+                <div id="product-categories-container"></div>
+                <script>
+                    fetch('conveyor-style-fragments/fragments/product-categories/index.html')
+                        .then(response => response.text())
+                        .then(html => {
+                            document.getElementById('product-categories-container').innerHTML = html;
+                        });
+                </script>
+            </div>
+        </div>
     </div>
     
     <div class="preview-footer">
         <p>&copy; 2025 Conveyors Inc. Liferay Fragments Collection</p>
-        <p>Ready for import into Liferay DXP</p>
+        <p>Ready for import into Liferay DXP - 8 Production-Ready Fragments</p>
     </div>
 </body>
 </html>
