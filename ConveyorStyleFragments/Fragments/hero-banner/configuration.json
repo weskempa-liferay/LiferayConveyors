@@ -10,7 +10,6 @@
           "type": "text"
         },
         {
-          "dataType": "bool",
           "defaultValue": true,
           "label": "Show Overlay",
           "name": "showOverlay",

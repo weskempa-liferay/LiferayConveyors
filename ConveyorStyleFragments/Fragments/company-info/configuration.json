@@ -16,7 +16,6 @@
           }
         },
         {
-          "dataType": "bool",
           "defaultValue": true,
           "label": "Show Feature Icons",
           "name": "showFeatures",

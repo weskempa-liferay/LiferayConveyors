@@ -17,7 +17,6 @@
           }
         },
         {
-          "dataType": "bool",
           "defaultValue": true,
           "label": "Show View All Button",
           "name": "showViewAll",
